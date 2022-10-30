@@ -1,8 +1,6 @@
 import { Sequelize } from "sequelize";
 
-const sequelize = new Sequelize(
-  "postgres://vlaho:RMdi1WQ42qcyI5rPdyqw0DC6AinZpBYT@dpg-cdfc9eda4992md4de3o0-a/web2lab_9rcz"
-);
+const sequelize = new Sequelize(process.env.DATABASE_URL);
 
 const models: any = {};
 
