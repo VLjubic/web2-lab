@@ -1,0 +1,14 @@
+html
+    head
+        title web2 lab
+    body
+        if username
+            h1 Bok #{username}, dobrodošli na rezultatske stranice Prvenstva Hrvatske u vaterpolu
+            h3: a(href="/logout") Odjava
+        else
+            h1 Bok! Niste prijavljeni korisnik
+            h3 Ukoliko želite pregledavati i dodavati komentare na utakmice prijavite se u aplikaciju
+            a(href='/login') Prijava
+        ul
+            li: a(href='/games', title='games') Popis utakmica
+            li: a(href='/table') Tablica
